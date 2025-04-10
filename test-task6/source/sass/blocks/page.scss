@@ -1,0 +1,36 @@
+@use "../common/variables.scss" as v;
+@use "../mixins/media.scss" as m;
+
+.page {
+  margin: 0;
+  height: 1px;
+}
+
+.page__body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: v.$font-family;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @include m.tablet {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  @include m.desktop {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.page__main {
+  flex: 1;
+  height: 100px;
+}

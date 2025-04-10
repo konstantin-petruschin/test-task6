@@ -1,0 +1,43 @@
+@use "../mixins/media.scss" as m;
+@use "../common/variables.scss" as v;
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: v.$phone;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include m.tablet {
+    min-width: v.$tablet;
+  }
+
+  @include m.desktop {
+    max-width: v.$desktop;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
