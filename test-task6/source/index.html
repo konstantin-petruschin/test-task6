@@ -49,86 +49,163 @@
       <div class="page-main__container container">
         <h1 class="page-main__heading">Закончились кредиты?</h1>
 
-        <div class="credits swiper-container">
-          <div class="page-main__swiper credits-swiper swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <div class="credits__card">
-                  <div class="credits__promotion">
-                    <span class="credits__promotion-text">
-                      One time offer!
-                    </span>
-                    <div class="credits__promotion-price">
-                      <div class="credits__price-wrapper">
-                        <span class="credits__price-value">50</span>
-                        <span class="credits__price-icon">cr</span>
+        <div class="page-main__wrapper">
+          <div class="page-main__promotion promotion">
+            <p class="promotion__text">До конца акции осталось</p>
+            <div class="promotion__timer" id="timer">00:00:00</div>
+          </div>
+          <div class="credits swiper-container">
+            <div class="page-main__swiper credits-swiper swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="credits__card">
+                    <div class="credits__promotion">
+                      <span class="credits__promotion-text">
+                        One time offer!
+                      </span>
+                      <div class="credits__promotion-price">
+                        <div class="credits__price-wrapper">
+                          <span class="credits__price-value">50</span>
+                          <span class="credits__price-icon">cr</span>
+                        </div>
+                        <span class="credits__price-percent">/ $5</span>
                       </div>
-                      <span class="credits__price-percent">/ $5</span>
                     </div>
+                    <a href="#" class="credits__card-link">Try now</a>
                   </div>
-                  <a href="#" class="credits__card-link">Try now</a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="credits__card">
-                  <div class="credits__promotion">
-                    <span class="credits__promotion-text">
-                      One time offer!
-                    </span>
-                    <div class="credits__promotion-price">
-                      <div class="credits__price-wrapper">
-                        <span class="credits__price-value">50</span>
-                        <span class="credits__price-icon">cr</span>
+                </li>
+                <li class="swiper-slide">
+                  <div class="credits__card">
+                    <div class="credits__promotion">
+                      <span class="credits__promotion-text">
+                        One time offer!
+                      </span>
+                      <div class="credits__promotion-price">
+                        <div class="credits__price-wrapper">
+                          <span class="credits__price-value">50</span>
+                          <span class="credits__price-icon">cr</span>
+                        </div>
+                        <span class="credits__price-percent">/ $5</span>
                       </div>
-                      <span class="credits__price-percent">/ $5</span>
                     </div>
+                    <a href="#" class="credits__card-link">Try now</a>
                   </div>
-                  <a href="#" class="credits__card-link">Try now</a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="credits__card">
-                  <div class="credits__promotion">
-                    <span class="credits__promotion-text">
-                      One time offer!
-                    </span>
-                    <div class="credits__promotion-price">
-                      <div class="credits__price-wrapper">
-                        <span class="credits__price-value">50</span>
-                        <span class="credits__price-icon">cr</span>
+                </li>
+                <li class="swiper-slide">
+                  <div class="credits__card">
+                    <div class="credits__promotion">
+                      <span class="credits__promotion-text">
+                        One time offer!
+                      </span>
+                      <div class="credits__promotion-price">
+                        <div class="credits__price-wrapper">
+                          <span class="credits__price-value">50</span>
+                          <span class="credits__price-icon">cr</span>
+                        </div>
+                        <span class="credits__price-percent">/ $5</span>
                       </div>
-                      <span class="credits__price-percent">/ $5</span>
                     </div>
+                    <a href="#" class="credits__card-link">Try now</a>
                   </div>
-                  <a href="#" class="credits__card-link">Try now</a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="credits__card">
-                  <div class="credits__promotion">
-                    <span class="credits__promotion-text">
-                      One time offer!
-                    </span>
-                    <div class="credits__promotion-price">
-                      <div class="credits__price-wrapper">
-                        <span class="credits__price-value">50</span>
-                        <span class="credits__price-icon">cr</span>
+                </li>
+                <li class="swiper-slide">
+                  <div class="credits__card">
+                    <div class="credits__promotion">
+                      <span class="credits__promotion-text">
+                        One time offer!
+                      </span>
+                      <div class="credits__promotion-price">
+                        <div class="credits__price-wrapper">
+                          <span class="credits__price-value">50</span>
+                          <span class="credits__price-icon">cr</span>
+                        </div>
+                        <span class="credits__price-percent">/ $5</span>
                       </div>
-                      <span class="credits__price-percent">/ $5</span>
                     </div>
+                    <a href="#" class="credits__card-link">Try now</a>
                   </div>
-                  <a href="#" class="credits__card-link">Try now</a>
-                </div>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <form class="credits__form" action="#">
+          <label class="credits__label">
+            <input type="checkbox" class="credits__input visually-hidden" checked>
+            <span class="credits__input-marker"></span>
+            <span class="credits__input-text">By clicking Checkbox you agree and accept our <a href="" class="credits__input-link">Privacy Policy</a>, and <a class="credits__input-link">Terms of use</a></span>
+          </label>
+        </form>
+        <div class="features">
+          <div class="features__image-wrapper">
+            <img src="img/icons/diamond-big.svg" alt="" class="features__image" width="81" height="67">
+          </div>
+          <div class="features__item">
+            <a href="#" class="features__link-icon">
+              <svg class="features__item-icon" width="14" height="14">
+                <use xlink:href="img/sprites/sprites.svg#message"></use>
+              </svg>
+            </a>
+            <a href="#" class="features__text-link">Отправлять сообщения</a>
+          </div>
+          <div class="features__item">
+            <a href="#" class="features__link-icon">
+              <svg class="features__item-icon"  width="16" height="12">
+                <use xlink:href="img/sprites/sprites.svg#eye"></use>
+              </svg>
+            </a>
+            <a href="#" class="features__text-link">Просматривать скрытые фото</a>
           </div>
 
+          <div class="features__item">
+            <a href="#" class="features__link-icon">
+              <svg class="features__item-icon" width="14" height="14">
+                <use xlink:href="img/sprites/sprites.svg#present"></use>
+              </svg>
+            </a>
+            <a href="#" class="features__text-link">Оплачивать подарки</a>
+          </div>
+
+          <div class="features__item">
+            <a href="#" class="features__link-icon">
+              <svg class="features__item-icon" width="16" height="14">
+                <use xlink:href="img/sprites/sprites.svg#like"></use>
+              </svg>
+            </a>
+            <a  href="#" class="features__text-link">Пользоваться другими премиум
+            функциями</a>
+          </div>
 
         </div>
+        </div>
+
+        <div class="page-main__sidebar sidebar">
+          <div class="sidebar__avatar">
+            <img src="" alt="" class="sidebar__avatar-img">
+          </div>
+          <ul class="sidebar__user-list">
+            <li class="sidebar__user-item">
+              <a href="" class="sidebar__user-link"></a>
+            </li>
+            <li class="sidebar__user-item">
+              <a href="" class="sidebar__user-link"></a>
+            </li>
+            <li class="sidebar__user-item">
+              <a href="" class="sidebar__user-link"></a>
+            </li>
+            <li class="sidebar__user-item">
+              <a href="" class="sidebar__user-link"></a>
+            </li>
+            <li class="sidebar__user-item">
+              <a href="" class="sidebar__user-link"></a>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>

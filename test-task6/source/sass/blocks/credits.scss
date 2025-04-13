@@ -5,7 +5,6 @@
   width: 100%;
 }
 
-
 .credits__promotion {
   background-color: v.$primary-color;
   border-radius: 10px;
@@ -17,7 +16,6 @@
   gap: 64px;
   margin-bottom: 49px;
 }
-
 
 .credits__promotion-text {
   display: inline-block;
@@ -75,4 +73,24 @@
   color: v.$text-color;
 }
 
+.credits__input-marker {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  border: 1px solid v.$primary-color;
+}
 
+.credits__input:checked + .credits__input-marker {
+  background-color: v.$primary-color;
+}
+
+.credits__input:checked + .credits__input-marker::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-image: url("img/icons/check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

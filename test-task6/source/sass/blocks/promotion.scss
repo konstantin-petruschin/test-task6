@@ -1,0 +1,17 @@
+@use "../common/variables.scss" as v;
+@use "../mixins/media.scss" as m;
+
+.promotion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promotion__timer {
+  background-color: v.$background-color;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 36px;
+  line-height: 36px;
+}

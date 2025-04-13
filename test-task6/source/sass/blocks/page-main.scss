@@ -32,8 +32,16 @@
   }
 
   .swiper-pagination {
-    top: 50%;
+    top: 35%;
   }
 }
 
+.page-main__promotion {
+  display: none;
 
+  @include m.desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+@use "../common/variables.scss" as v;
+@use "../mixins/media.scss" as m;
+
+.sidebar {
+  display: none;
+
+  @include m.desktop {
+    display: flex;
+    flex-direction: none;
+  }
+}

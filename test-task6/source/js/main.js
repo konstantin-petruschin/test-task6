@@ -13,9 +13,6 @@ toggleButtonElement.addEventListener('click', function () {
   }
 });
 
-
-
-
 const slider = new Swiper('.credits-swiper', {
   slidesPerView: 1,
   pagination: {
@@ -23,3 +20,32 @@ const slider = new Swiper('.credits-swiper', {
     clickable: true,
 },
 });
+
+function startTimer(duration) {
+  let timer = duration, hours, minutes, seconds;
+  const display = document.getElementById('timer');
+
+  const interval = setInterval(function () {
+      hours = parseInt(timer / 3600, 10);
+      minutes = parseInt((timer % 3600) / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = hours + ":" + minutes + ":" + seconds;
+
+      if (--timer < 0) {
+          clearInterval(interval);
+          startTimer(duration); // Запускаем таймер заново
+      }
+  }, 1000);
+}
+
+window.onload = function () {
+  const tenMinutes = 60 * 10; // 10 минут
+  startTimer(tenMinutes);
+};
+
+
